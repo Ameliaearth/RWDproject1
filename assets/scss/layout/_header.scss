@@ -14,11 +14,10 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    z-index:-1;
 }
 .pic1 img{
-    position:absolute;
-    z-index:0;
-    top: 0;
+    width: 100%;
     background-position: center center;
     background-size: cover;
 }
@@ -26,12 +25,32 @@
 
 //menu
 .menu{
-    background: rgba(56, 55, 55, 0.308);
-    //background-image: repearing-linear-gradient(75%);
+    background: rgba(0,0,0,0.75);
+    position:absolute;
+    z-index:1;
+    width: 100%;/* 確保 menu 占滿整個寬度，這樣 justify-content 才能生效 */
+    height: 56px;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
+}
+.menu-area {
+    display: flex;
+    margin-right: 20px;
+    border:3px solid Transparent;
+    li {
+        margin-left: 15px; /* 調整各個 menu item 之間的距離 */
+    }
+    a{
+        padding:6px;
+        padding-bottom: 20px;
+
+        &:hover{
+            color:#FFFF30;
+            border-bottom:3px solid #FFFF30;
+        }
+    }
 }
 
 
@@ -41,7 +60,22 @@ h1 a{
     display:block;
     width: 120px;
     height: 24px;
+    margin: 10px;
     text-indent:25em;
     overflow:hidden;
     white-space:nowrap;
+}
+
+.tit1{
+    background: rgba(0,0,0,0.35);
+    color:#fff;
+    position:absolute;
+    z-index:100;
+    
+    left: 700px;
+    top: 200px;
+}
+.tit1 p{
+    padding: 20px;
+    text-align:center;
 }
