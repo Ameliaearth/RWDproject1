@@ -29,9 +29,161 @@
   </head>
   <body>
 
-    
-    <div class="container">
     <%- include('./layout/header'); -%>
+    <div class="container">
+
+      <!--aside-->
+      <div class="aside">
+        <div>
+          <div class="border-1"></div>
+          <h2>客人總是在詢問<br>
+              這麼好吃的秘訣是什麼</h2>
+          <div class="border-2"></div>
+        </div>
+        <ul class="aside-area">
+          <li>
+            <div>
+              <img src="/assets/images/feature_1.png" alt="feature_1">
+            </div>
+            <h3>台灣本土蔬菜</h3>
+            <p>In hac habitasse platea dictumst. <br>
+              Vivamus adipiscing fermentum <br>quam volutpat aliquam. 
+              Integer et <br>elit eget elit facilisis tristique. 
+              Nam <br>vel iaculis mauris.</p>
+          </li>
+          <li>
+            <div>
+              <img src="/assets/images/feature_2.png" alt="feature_2">
+            </div>
+            <h3>專業米其林廚師</h3>
+            <p>Sed ullamcorper tellus erat, non <br>ultrices sem tincidunt euismod.<br> 
+              Fusce rhoncus porttitor velit, eu <br>bibendum nibh aliquet vel. 
+              Fusce <br>lorem leo, vehicula at nibh quis, <br>
+              facilisis accumsan turpis.</p>
+          </li>
+          <li>
+            <div>
+              <img src="/assets/images/feature_3.png" alt="feature_3">
+            </div>
+            <h3>對於專業不能退讓</h3>
+            <p>Fusce rhoncus porttitor velit, 
+              eu <br>bibendum nibh aliquet vel. Fusce <br>lorem leo, 
+              vehicula at nibh quis, <br>facilisis accumsan turpis.</p>
+          </li>
+        </ul>
+      </div>
+
+      <!--main-->
+      <div class="main">
+        <div class="main-area1">
+          <img src="/assets/images/main_chef_brown.png" alt="main_chef_brown">
+        </div>
+        <div class="main-area2">
+          <h4>今日主廚：帕金森、梅在帕</h4>
+          <p class="main-tit">Tody Chef: Plum in Shock</p>
+          <p>Mauris non tempor quam, et lacinia sapien. Mauris <br>
+            accumsan eros eget libero posuere vulputate. Etiam <br>
+            elit elit, elementum sed varius at, adipiscing vitae est. <br>
+            Sed nec felis pellentesque, lacinia dui sed, ultricies <br>
+            sapien. Pellentesque orci lectus, consectetur vel <br>
+            posuere posuere, rutrum eu ipsum. Aliquam eget odio <br>
+            sed ligula iaculis consequat at eget orci. Mauris <br>
+            molestie sit amet metus mattis varius. Donec sit amet <br>
+            ligula eget nisi sodales egestas. Aliquam interdum <br>
+            dolor aliquet dolor sollicitudin fermentum. Donec <br>
+            congue lorem a molestie bibendum.</p>
+        </div>
+      </div>
+
+      <!--sction-->
+      <div class="sction">
+        <h2>聽聽別人的感想</h2>
+        <div>
+          <ul class="sction-items">
+            <li>
+              <div class="sction-area">
+                <img src="/assets/images/avatar_1.png" alt="avatar_1">
+              </div>
+              <div class="sction-tit">
+                <h3>高雄一口吃</h3>
+                <p>自從吃了這家餐廳以後，我口<br>
+                  水連續流了一個多月都沒停，<br>
+                  下次不要再被我遇到，不然我<br>
+                  一定連他們桌子都啃下去。</p>
+                <p class="float-r"> -- 產品經理</p>
+              </div>
+            </li>
+            <li>
+              <div class="sction-area">
+                <img src="/assets/images/avatar_2.png" alt="avatar_2">
+              </div>
+              <div class="sction-tit">
+                <h3>廟口小霸王</h3>
+                <p>自從吃了這家餐廳以後，我口<br>
+                  水連續流了一個多月都沒停，<br>
+                  下次不要再被我遇到，不然我<br>
+                  一定連他們桌子都啃下去。</p>
+                <p class="float-r"> -- 金身道士</p>
+              </div>
+            </li>
+            <li>
+              <div class="sction-area">
+                <img src="/assets/images/avatar_3.png" alt="avatar_3">
+              </div>
+              <div class="sction-tit">
+                <h3>春天也來了</h3>
+                <p>自從吃了這家餐廳以後，我口<br>
+                  水連續流了一個多月都沒停，<br>
+                  下次不要再被我遇到，不然我<br>
+                  一定連他們桌子都啃下去。</p>
+                <p class="float-r"> -- 美麗萬分</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--article-->
+      <from action="index.html" methed="post">
+        <div class="article">
+          <h2>我們的位置不太夠坐<br>
+            要不要先定位呢？</h2>
+          <div class="article-area">
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1894150.7809888087!2d117.53842365992985!3d21.9916370833192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z6auY6ZuE5biC5Lit5q2j5LqU6Lev5Yiw5bqV!5e0!3m2!1szh-TW!2stw!4v1720130873871!5m2!1szh-TW!2stw" width="460" height="386" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <ul>
+              <li class="article-items">
+                <label for="person">姓名</label>
+                <input id="person" type="text" placeholder="六角講師吃尾牙" name="person">
+              </li>
+              <li class="article-items">
+                <label for="tel">電話</label>
+                <input id="tel" type="text" placeholder="02-1234567" name="tel">
+              </li>
+              <li class="article-items">
+                <label for="mail">信箱</label>
+                <input id="mail" type="text" placeholder="test@gmail.com" name="mail">
+              </li>
+              <li class="article-items">
+                <label for="person">人數</label>
+                <input id="person" type="text"  name="person">
+              </li>
+              <li class="article-items">
+                <h5>是否需要素食</h5>
+                <ul>
+                  <input type="radio"  name="sex" value>是
+                  <input type="radio"  name="sex" value>否
+                </ul>
+              </li>
+              <li class="float-r">
+                <a href class="bg-c1">確定</a>
+                <a href class="bg-c2">取消</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </from>
+
 
     
 
