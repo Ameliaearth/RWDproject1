@@ -53,6 +53,14 @@
         color: #3D1101;
     }
 }
+@media(max-width:798px){
+    .aside-area{
+        flex-direction: column;
+        li{
+            margin-bottom: 20px;
+        }
+    }
+}
 
 //main
 .main{
