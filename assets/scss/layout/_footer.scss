@@ -1,13 +1,18 @@
 .footer{
     background: #efe9e7;
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
 
     padding: 54px 43px;
 }
 .footer-area1{
     display:flex;
     justify-content:space-around;
+}
+@media(max-width:798px){
+    .footer-area1{
+        flex-direction: column;
+    }
 }
 
 .footer-items1{
@@ -23,6 +28,12 @@
         line-height:1.5;
     }
 }
+@media(max-width:798px){
+    .footer-items1{
+        margin-bottom:20px;
+    }
+}
+
 .footer-items2{
     h2{
         font-size: 24px;
@@ -44,6 +55,12 @@
         }
     }
 }
+@media(max-width:798px){
+    .footer-area2{
+        display:none;
+    }
+}
+
 .footer-items4{
     a{
         padding-top: 22px;
