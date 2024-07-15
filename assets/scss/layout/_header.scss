@@ -9,19 +9,71 @@
     'opsz' 24
 }
 
+//header
+.header{
+    position:relative;
+}
+
+//showmenu
+.showmenu{
+    display:none;
+}
+@media(max-width:798px){
+    .showmenu{
+        display:block;
+        padding: 20px;
+        float:right;
+    }
+}
+.menu-open.menu-area{
+    max-height:500px;
+}
+@media(max-width:798px){
+    .menu-area{
+        max-height:0;
+        overflow:hidden;
+        position:absolute;
+        z-index:100;
+        transition:max-height 2.3s;
+        top: 81px;
+        left: 0;
+        right: 0;
+        background: #000;
+        li{
+            float:none;
+            a{
+                transition:all 0.3s;
+                &:hover{
+                    color:#FFFF30;
+                }
+            }
+        }
+    }
+}
+
 //nav
+.nav{
+    position:relative;
+}
 .pic1{
     display:flex;
     justify-content:center;
     align-items:center;
     z-index:-1;
 }
-.pic1 img{
+.home-bg{
+    background-image: url(../assets/images/header_desktop.png);
     width: 100%;
+    height: 40rem;
     display:block;
     background-position: center center;
-    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media(max-width:798px){
+        background-image: url(../assets/images/header_mobile.png);
+    }
 }
+
 
 
 //menu
@@ -68,26 +120,37 @@ h1 a{
 }
 
 
-.nav{
-    position:relative;
 
-    .tit1{
-        position:absolute;
-        z-index:100;
-        background: rgba(0,0,0,0.35);
-        color:#fff;
-        left: 700px;
-        top: 200px;
-    }
-    @media(max-width:1024px){
-        .tit1{
-            left: 300px;
-            top: 50px;
-        }
+.tit1{
+    position:absolute;
+    z-index:100;
+    background: rgba(0,0,0,0.35);
+    color:#fff;
+    display:block;
+    left: 35%;
+    top: 25%;
+    p{
+        padding: 20px;
+        text-align:center;
     }
 }
-
-.tit1 p{
-    padding: 20px;
-    text-align:center;
+@media(max-width:798px){
+    .tit1{
+        left: 20%;
+        top: 35%;
+    }
+    p{
+        padding: 12px;
+    }
+    .fsz-20{
+        font-size: 20px;
+    }
+    .fw-700{
+        font-weight:700;
+    }
+}
+@media(max-width:480px){
+    .tit1{
+        display:none;
+    }
 }

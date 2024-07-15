@@ -8,14 +8,17 @@
     bottom: 75px;
 }
 .border-1{
-    left: 700px;
-
+    top: 13%;
+    left: 60%;
+    position:absolute;
 }
 .border-2{
-    right: 700px;
-
+    top: 13%;
+    right: 60%;
+    position:absolute;
 }
 .aside{
+    position:relative;
     background: #efe9e7;
     padding: 50px 0;
     h2{
@@ -26,12 +29,19 @@
         color: #3D1101;
         line-height: 32px;
     }
+    @media(max-width:798px){
+        .border-1,
+        .border-2{
+            display:none;
+        }
+    }
+
 }
 .aside-area{
     margin-top: 31px;
 
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
     align-items:center;
 
     li{
@@ -40,6 +50,9 @@
         justify-content:center;
         align-items:center;
         flex-direction:column;
+        img{
+            border-radius: 50%;
+        }
     }
     h3{
         font-size: 18px;
@@ -58,6 +71,7 @@
         flex-direction: column;
         li{
             margin-bottom: 20px;
+            margin-right:0;
         }
     }
 }
@@ -69,10 +83,23 @@
     justify-content:center;
     align-items:center;
 }
+@media(max-width:798px){
+    .main{
+        flex-direction: column;
+    }
+}
+
 .main-area1{
     margin-right:25px;
+    @media(max-width:798px){
+        margin-right:0;
+    }
+    img{
+        display:block;
+    }
 }
 .main-area2{
+    margin: 20px 0;
     h4{
         font-size: 20px;
         color: #EFE9E7;
@@ -111,12 +138,19 @@
             margin-right: 20px;
             .sction-area{
                 img{
+                    border-radius: 50%;
                     width: 67px;
                     height: 67px;
                 }
             }
         }
     }
+    @media(max-width:798px){
+        .sction-items{
+            flex-direction: column;
+        }
+    }
+
     .sction-tit{
         float:left;
         h3{
@@ -175,11 +209,23 @@
             margin-bottom: 8px;
         }
     }
+    @media(max-width:798px){
+        .article-area{
+            flex-direction: column;
+        }
+    }
     .map{
         margin-right: 20px;
         border:1px solid #cccc;
     }
 }
+@media(max-width:798px){
+    .map-go{
+        display:block;
+        width: auto;
+    }
+}
+
 label{
     margin: 6px 0;
 }
